@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1 class="text-center">Welcome to Hospital Management System</h1>
+    <p class="lead">Manage patients, doctors, and appointments efficiently.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Patients</h5>
+                    <p class="card-text">View and add patients.</p>
+                    <a href="/patients" class="btn btn-primary">Go to Patients</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Doctors</h5>
+                    <p class="card-text">View and add doctors.</p>
+                    <a href="/doctors" class="btn btn-primary">Go to Doctors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Appointments</h5>
+                    <p class="card-text">Schedule and view appointments.</p>
+                    <a href="/appointments" class="btn btn-primary">Go to Appointments</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
